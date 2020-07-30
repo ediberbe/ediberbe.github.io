@@ -22,10 +22,15 @@ body {
 
 /* Download */
 
-.download {
+.divbutton {
+    color: white;
+    text-decoration: none;
+}
+
+.divbutton > div {
     font-size: 24px;
 
-    background: #eeefe5;
+    background: #F5F0F6;
     display: block;
     margin: 20px auto;
     margin-bottom: 0.5cm;
@@ -34,15 +39,14 @@ body {
     width: 21cm;
 
     text-align: center;
+
+    background-color: #696773;
+    transition: 0.2s;
 }
 
-.download > a {
-    text-decoration: none;
+.divbutton > div:hover {
+    background-color: #eeefe5;
     color: black;
-}
-
-.download > a:hover {
-    text-decoration: underline;
 }
 
 /* Section */
