@@ -1,0 +1,136 @@
+/* A4 page template */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    background: rgb(204,204,204); 
+}
+
+.container {
+    background: white;
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 0.5cm;
+    padding: 40px;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+.container[size="A4"] {  
+    width: 21cm;
+    height: 29.7cm;
+}
+
+/* Download */
+
+.divbutton {
+    color: white;
+    text-decoration: none;
+}
+
+.divbutton > div {
+    font-size: 24px;
+
+    background: #F5F0F6;
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 0.5cm;
+    padding: 20px 40px;
+
+    width: 21cm;
+
+    text-align: center;
+
+    background-color: #696773;
+}
+
+.divbutton > div:hover {
+    background-color: #eeefe5;
+    color: black;
+}
+
+/* Section */
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid lightgrey;
+}
+  
+section:last-child {
+    border-bottom: none;
+}
+  
+.section-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Job */
+
+.job {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid lightgrey;
+}
+  
+.job:last-child {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+  
+.job-title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+  
+.job-company {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.time-place-container > *{
+    text-align: right;
+}
+
+/* About Me */
+
+img.avatar{
+    width: 130px; /* width: 100%; */
+}
+
+.my-name {
+    font-size: 36px;
+    line-height: 1;
+}
+  
+.my-title {
+    font-size: 24px;
+}
+
+#github { 
+    color: inherit;
+} 
+
+.links {
+    display: flex;
+    margin: 10px 0 20px 0;
+}
+
+.links :first-child {
+    margin-left: 0px;
+}
+
+.icon {
+    fill: currentColor;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    margin-left: 16px;
+    margin-right: 4px;
+}
