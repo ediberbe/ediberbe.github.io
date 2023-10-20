@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cv</title>
+    <link rel="shortcut icon" type="image/png" href="../favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="cv.css">
+</head>
+<body>
+
+    <div id="topbar">
+        <div id="topbar_container">
+            <div id="download">
+                <div>
+                    Download PDF
+                </div>
+            </div>
+            <img src="romanian.png" id="language" onclick="loadCvPage()" >
+        </div>
+    </div>
+
+
+    <div class="container" size="A4">
+
+        <section>
+            <img src="avatar.png" alt="avatar" class="avatar">
+            <div>
+                <div class="my-name">Berbescu Radu Eduard</div>
+                <div class="my-title">Programmer</div>
+                <div class="links">
+                    <img src="phone.svg" class="icon">
+                    +(40) 727 040 490
+                    <img src="email.svg" class="icon">
+                    ediberbescu@gmail.com
+                    <img src="github.svg" class="icon">
+                    <a id="github" href="https://www.github.com/ediberbe">github.com/ediberbe</a>
+                </div>
+                I'm perpetually learning. Constructive criticism is always welcome.
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">EXPERIENCE</div>
+            <div>
+                <div class="job">
+                    <div class="job-title-container">
+                        <div>
+                            <div class="job-company">Adswizz</div>
+                            <div class="job-title">QA Automation Engineer</div>
+                        </div>
+                        <div class="time-place-container">
+                            <div>Romania, Bucharest</div>
+                            <div>1 Year</div>
+                        </div>
+                    </div> <!-- end job-title container -->
+                    The job's responsibility is to enhance a suite of backend tests for a programmatic advertising serving product by designing new tests and the underlying code. The technologies used are <b>Java</b> and JBehave.
+                </div> <!-- end job -->
+    
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">EDUCATION</div>
+            <div>
+                <div class="job">
+                    <div class="job-title-container">
+                        <div>
+                            <div class="job-company">University of Bucharest</div>
+                            <div class="job-title">Computer Science Bachelors Degree</div>
+                        </div>
+                        <div class="time-place-container">
+                            <div>Romania, Bucharest</div>
+                            <div>3 Years</div>
+                        </div>
+                    </div> <!-- end job-title container -->
+                    It includes supplementary mathematics courses and fundamental computer science courses: data structures and algorithms, programming languages (C, C++, Java, C#, Haskell), databases (SQL, PL/SQL, Oracle), web application development (HTML, CSS, JavaScript, XML, JSP, ASP.NET), network administration (Unix, Windows).
+                </div> <!-- end job -->
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">SKILLS</div>
+            <div class="text-container">
+                <span style="font-weight:bold">Programming:</span><br>
+                - currently, I am managing my own server running Debian (Linux)
+                <br><br>
+                - <a id="github" href="https://github.com/ediberbe/desktop_controller">a program through which I can use the controller as a mouse/keyboard</a>
+                <br><br>
+                - <a id="github" href="https://github.com/ediberbe/arduino_snake">snake game using Arduino with a joystick and an 8x8 display</a>
+                <br><br>
+                - <a id="github" href="https://github.com/ediberbe/minesweeper_auto-solver">minesweeper game with an implementation of a self-solving algorithm</a>
+                <br><br>
+                <span style="font-weight:bold">Languages:</span> Romanian and English.<br><br>
+                <span style="font-weight:bold">Speedcubing:</span> I participated in the Bucharest Rubik Summer 2014 event, where I achieved a time of 27.61 seconds for the 3x3x3 category.
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">CERTIFICATIONS</div>
+            <div class="text-container">
+                <span style="font-weight:bold">ECDL:</span> Computer usage, Online tools, Text editing, Spreadsheet calculations, Databases, Presentations.<br><br>
+                <span style="font-weight:bold">Oracle:</span> Database Design and Programming with SQL
+            </div>
+        </section>
+
+    </div>
+    
+<script>
+    var downloadDiv = document.getElementById('download');
+    downloadDiv.addEventListener('click', function() {
+        var a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = 'cv_en.pdf';
+        a.download = 'cv_en.pdf';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    });
+
+    function loadCvPage() {
+        window.location.href = "cv_ro.html";
+    }
+    </script>
+</body>
+</html>

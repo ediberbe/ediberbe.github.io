@@ -22,30 +22,42 @@ body {
 
 /* Download */
 
-.divbutton {
+#topbar {
+    margin-top: 0.5cm;
+    width: 100%;
+}
+
+#topbar_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#language {
+    width: 3cm;
+    margin-left: 0.3cm;
+}
+
+#language:hover{
+    cursor: pointer;
+}
+
+#download{
+    width: 19.8cm;
+    height: 1.8cm;
+    background-color: #5e5c66;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    text-decoration: none;
-}
-
-.divbutton > div {
     font-size: 24px;
-
-    background: #F5F0F6;
-    display: block;
-    margin: 20px auto;
-    margin-bottom: 0.5cm;
-    padding: 20px 40px;
-
-    width: 21cm;
-
-    text-align: center;
-
-    background-color: #696773;
+    cursor: pointer;
 }
 
-.divbutton > div:hover {
-    background-color: #eeefe5;
-    color: black;
+#download:hover{
+    background-color: #696773;
+    transition-duration: 40ms;
 }
 
 /* Section */
