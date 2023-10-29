@@ -146,3 +146,29 @@ img.avatar{
     margin-left: 16px;
     margin-right: 4px;
 }
+
+
+/* PATCHING */
+
+#projects {
+    margin-top: 0;
+}
+
+#educatie, #experienta {
+    margin-bottom: 0;
+}
+
+.bullet_list {
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+  
+.bullet_list >  li {
+    padding-left: 0.05cm;
+    margin-bottom: 0.1cm;
+}
+
+.bullet_list > li:last-child {
+    margin-bottom: 0;
+}
