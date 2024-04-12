@@ -62,6 +62,10 @@ body {
 
 /* Section */
 
+section:first-child {
+    padding-top: 20px; /* Adjust this value as needed */
+}
+
 .info {
     display: flex;
     flex-direction: column;
